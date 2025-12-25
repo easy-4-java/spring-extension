@@ -1,17 +1,7 @@
 package org.springframework.biz.web.servlet.handler;
 
-import java.io.IOException;
-import java.text.NumberFormat;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
+import hitool.core.io.FilemimeUtils;
+import hitool.core.io.FiletypeUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,8 +16,11 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import hitool.core.io.FilemimeUtils;
-import hitool.core.io.FiletypeUtils;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.text.NumberFormat;
+import java.util.*;
 
 /**
  *  参考 http://www.cnblogs.com/com-itheima-crazyStone/p/6807342.html

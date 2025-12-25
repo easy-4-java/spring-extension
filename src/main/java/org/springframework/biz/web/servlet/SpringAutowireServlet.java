@@ -1,9 +1,9 @@
 package org.springframework.biz.web.servlet;
 
+import org.springframework.web.context.support.WebApplicationContextUtils;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
-
-import org.springframework.web.context.support.WebApplicationContextUtils;
 
 @SuppressWarnings("serial")
 public class SpringAutowireServlet extends HttpServlet {

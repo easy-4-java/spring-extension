@@ -1,13 +1,13 @@
 package org.springframework.biz.utils;
 
-import javax.servlet.http.HttpServletRequest;
-
 import hitool.core.lang3.StringUtils;
 import hitool.core.lang3.network.InetAddressUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.HttpServletRequest;
 
 /*
  * http://blog.csdn.net/caoshuming_500/article/details/20952329
