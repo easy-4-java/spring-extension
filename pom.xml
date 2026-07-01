@@ -5,8 +5,8 @@
 
 	<groupId>com.github.hiwepy</groupId>
 	<artifactId>spring-enhance</artifactId>
-	<version>5.3.x-20251215-SNAPSHOT</version>
-	<description>Spring  Enhance</description>
+	<version>5.3.x-20260630-SNAPSHOT</version>
+	<description>Spring Enhance</description>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<url>https://github.com/hiwepy/${project.artifactId}</url>
 	<packaging>jar</packaging>
@@ -37,16 +37,27 @@
 	</developers>
 
 	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<name>Maven Snapshots Repository</name>
-			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
-			<name>Maven Central Staging Repository</name>
-			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+			<id>2624322-release-6F6h6R</id>
+			<url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-release-6f6h6r</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
 		</repository>
+		<snapshotRepository>
+			<id>2624322-snapshot-3EoOv3</id>
+			<url>https://packages.aliyun.com/6927b116e6c3e0425dbdf60d/maven/2624322-snapshot-3eoov3</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
 	</distributionManagement>
 
 	<build>

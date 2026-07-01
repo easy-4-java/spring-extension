@@ -1,6 +1,6 @@
 package org.springframework.biz.utils;
 
-import com.alibaba.fastjson.JSONObject;
+import com.alibaba.fastjson2.JSONObject;
 import org.springframework.biz.web.servlet.view.*;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
