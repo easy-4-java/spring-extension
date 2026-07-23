@@ -5,7 +5,7 @@ Spring Extension
 
 ``` xml
 <dependency>
-	<groupId>com.github.hiwepy</groupId>
+	<groupId>io.github.easy4j</groupId>
 	<artifactId>spring-biz</artifactId>
 	<version>${project.version}</version>
 </dependency>
