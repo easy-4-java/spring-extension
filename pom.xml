@@ -392,7 +392,7 @@
 		<maven-nexus-staging-plugin.version>1.6.8</maven-nexus-staging-plugin.version>
 		<slf4j.version>2.0.18</slf4j.version>
 		<spring-framework.version>5.3.39</spring-framework.version>
-		<hitool.version>1.0.2.RELEASE</hitool.version>
+		<hitool.version>1.0.x.20260630-SNAPSHOT</hitool.version>
 		<validation-api.version>2.0.1.Final</validation-api.version>
 	</properties>
 
