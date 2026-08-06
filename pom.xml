@@ -519,7 +519,7 @@
         <!-- Dependency versions -->
         <slf4j.version>2.0.18</slf4j.version>
         <spring-framework.version>5.3.39</spring-framework.version>
-        <hitool.version>1.0.x.20260630-SNAPSHOT</hitool.version>
+        <easy4j-hitool.version>1.0.x.20260630-SNAPSHOT</easy4j-hitool.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
     </properties>
 
@@ -605,7 +605,7 @@
             <dependency>
                 <groupId>io.github.easy4j</groupId>
                 <artifactId>hitool-core</artifactId>
-                <version>${hitool.version}</version>
+                <version>${easy4j-hitool.version}</version>
             </dependency>
             <!-- For Lombok -->
             <dependency>
