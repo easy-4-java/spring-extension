@@ -7,7 +7,7 @@ import org.springframework.beans.BeanUtils;
 import java.lang.reflect.Method;
 
 /**
- * @author <a href="https://github.com/hiwepy">hiwepy</a>
+ * @author [@Loong Wan](https://github.com/loong10k)
  */
 public final class AspectUtils {
 
