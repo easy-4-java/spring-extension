@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 (https://github.com/hiwepy).
+ * Copyright (c) 2018 (https://github.com/loong10k).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -15,15 +15,15 @@
  */
 package org.springframework.biz.context.support;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Properties;
-
 import org.springframework.biz.web.servlet.support.RequestContextUtils;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Properties;
 
 public class ModuleReloadableResourceBundleMessageSource extends ReloadableResourceBundleMessageSource {
 	

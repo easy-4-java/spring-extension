@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018, hiwepy (https://github.com/hiwepy).
+ * Copyright (c) 2018, Loong Wan (https://github.com/loong10k).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -15,11 +15,11 @@
  */
 package org.springframework.biz.utils;
 
-import java.lang.annotation.Annotation;
-import java.lang.reflect.Proxy;
-
 import org.apache.harmony.lang.annotation.AnnotationFactory;
 import org.apache.harmony.lang.annotation.AnnotationMember;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Proxy;
 
 public class AnnotationUtils extends org.springframework.core.annotation.AnnotationUtils {
 

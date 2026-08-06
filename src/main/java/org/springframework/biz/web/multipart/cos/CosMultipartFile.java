@@ -1,16 +1,11 @@
 package org.springframework.biz.web.multipart.cos;
 
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Serializable;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.io.*;
 
 /**
  * Implementation of Spring's MultipartFile interface on top of a COS

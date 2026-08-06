@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 (https://github.com/hiwepy).
+ * Copyright (c) 2018 (https://github.com/loong10k).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -15,13 +15,12 @@
  */
 package org.springframework.biz.web.servlet.view.freemarker.cache;
 
+import freemarker.cache.TemplateLoader;
+import org.apache.commons.io.IOUtils;
+
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
-
-import org.apache.commons.io.IOUtils;
-
-import freemarker.cache.TemplateLoader;
 
 public class HtmlTemplateLoader implements TemplateLoader {
     

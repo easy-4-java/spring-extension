@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 (https://github.com/hiwepy).
+ * Copyright (c) 2018 (https://github.com/loong10k).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -15,9 +15,8 @@
  */
 package org.springframework.biz.factory;
 
-import org.springframework.beans.factory.FactoryBean;
-
 import hitool.core.lang3.uid.Sequence;
+import org.springframework.beans.factory.FactoryBean;
 
 public class EnhancedSequenceFactory extends EnhancedBeanFactory implements FactoryBean<Sequence> {
 

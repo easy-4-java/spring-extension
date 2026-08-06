@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 (https://github.com/hiwepy).
+ * Copyright (c) 2018 (https://github.com/loong10k).
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may not
  * use this file except in compliance with the License. You may obtain a copy of
@@ -15,12 +15,12 @@
  */
 package org.springframework.biz.factory;
 
-import java.util.Map;
-
 import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.biz.context.NestedMessageSource;
 import org.springframework.context.MessageSource;
+
+import java.util.Map;
 
 public class MultipleMessageSourceFactory extends EnhancedBeanFactory implements FactoryBean<MessageSource> {
 
