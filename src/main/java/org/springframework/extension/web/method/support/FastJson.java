@@ -1,0 +1,10 @@
+package org.springframework.extension.web.method.support;
+
+import java.lang.annotation.*;
+
+@Target(ElementType.PARAMETER)
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+public @interface FastJson {
+
+}

@@ -1,10 +1,10 @@
-# spring-enhance
+# spring-extension
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-[![Java](https://img.shields.io/badge/Java-17-orange)](https://github.com/easy-4-java/spring-enhance) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
+[![Java](https://img.shields.io/badge/Java-17-orange)](https://github.com/easy-4-java/spring-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
-spring-enhance ("Spring Enhancement") is a broad set of Spring Framework extensions that make application code more convenient on the plain Spring Fra...
+spring-extension ("Spring Enhancement") is a broad set of Spring Framework extensions that make application code more convenient on the plain Spring Fra...
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ spring-enhance ("Spring Enhancement") is a broad set of Spring Framework extensi
 
 ## 1. Project Overview
 
-`spring-enhance` ("Spring Enhancement") is a broad set of Spring Framework extensions that make application code more convenient on the plain Spring Framework (no Spring Boot): a module-oriented `DispatcherServlet` with pluggable module resolvers, MVC interceptors and base controllers, a JDK proxy-based `EnhancedProxy`, enhanced application events with AOP integration (`EnhancedEvent`, `EventAspect`), context/bean-factory conveniences (`SpringContext`, `EnhancedBeanFactory`, `EnhancedBeanScannerConfigurer`), property placeholder encryption, reusable property editors, listeners, quartz task base class, and a large utility package.
+`spring-extension` ("Spring Enhancement") is a broad set of Spring Framework extensions that make application code more convenient on the plain Spring Framework (no Spring Boot): a module-oriented `DispatcherServlet` with pluggable module resolvers, MVC interceptors and base controllers, a JDK proxy-based `EnhancedProxy`, enhanced application events with AOP integration (`EnhancedEvent`, `EventAspect`), context/bean-factory conveniences (`SpringContext`, `EnhancedBeanFactory`, `EnhancedBeanScannerConfigurer`), property placeholder encryption, reusable property editors, listeners, quartz task base class, and a large utility package.
 
 It is an extension library for Spring applications — it is not a framework and not a Spring Boot starter.
 
@@ -97,7 +97,7 @@ AbstractBaseController / generated MVC methods
 +------------------------------------+
 ```
 
-The project is a single jar module (`org.springframework.biz`), organized by concern:
+The project is a single jar module (`org.springframework.extension`), organized by concern:
 
 | Package | Responsibility |
 |:---|:---|
@@ -122,15 +122,15 @@ Maven:
 ```xml
 <dependency>
     <groupId>io.github.easy4j</groupId>
-    <artifactId>spring-enhance</artifactId>
-    <version>2.0.x.x.20260630-SNAPSHOT</version>
+    <artifactId>spring-extension</artifactId>
+    <version>2.0.x.20260630-SNAPSHOT</version>
 </dependency>
 ```
 
 Gradle:
 
 ```groovy
-implementation 'io.github.easy4j:spring-enhance:2.0.x.x.20260630-SNAPSHOT'
+implementation 'io.github.easy4j:spring-extension:2.0.x.20260630-SNAPSHOT'
 ```
 
 ## 6. Quick Start
@@ -138,7 +138,7 @@ implementation 'io.github.easy4j:spring-enhance:2.0.x.x.20260630-SNAPSHOT'
 Publish an enhanced event and consume it with plain Spring `@EventListener`:
 
 ```java
-import org.springframework.biz.context.event.EnhancedEvent;
+import org.springframework.extension.context.event.EnhancedEvent;
 import org.springframework.context.ApplicationEventPublisher;
 
 // publish an event that carries a bound payload
@@ -147,7 +147,7 @@ publisher.publishEvent(new EnhancedEvent<>(this, order));
 ```
 
 ```java
-import org.springframework.biz.context.event.EnhancedEvent;
+import org.springframework.extension.context.event.EnhancedEvent;
 import org.springframework.context.event.EventListener;
 
 @EventListener
@@ -174,8 +174,8 @@ Plain library — no Spring property prefixes are bound by the module itself. Co
 Access Spring beans from plain (non-Spring) code:
 
 ```java
-import org.springframework.biz.context.SpringContext;
-import org.springframework.biz.utils.SpringContextUtils;
+import org.springframework.extension.context.SpringContext;
+import org.springframework.extension.utils.SpringContextUtils;
 
 SpringContext context = SpringContextUtils.getContext();
 MyService service = context.getInstance(MyService.class);
@@ -185,7 +185,7 @@ context.getInstance("myService");
 Enhanced proxy for interface-based beans:
 
 ```java
-import org.springframework.biz.proxy.EnhancedProxy;
+import org.springframework.extension.proxy.EnhancedProxy;
 
 EnhancedProxy handler = new EnhancedProxy();
 MyService proxy = (MyService) java.lang.reflect.Proxy.newProxyInstance(
@@ -214,7 +214,7 @@ Three parallel version lines are maintained:
 | `feature/2.0.x` | 17 | `2.0.x.*` |
 | `feature/3.0.x` | 21 | `3.0.x.*` |
 
-Maintenance policy: the `1.0.x` line is the actively developed line (current snapshot `2.0.x.x.20260630-SNAPSHOT`); `2.0.x` and `3.0.x` are forward porting lines targeting newer JDKs. Snapshots are built on demand; tagged releases are distributed via GitHub Releases.
+Maintenance policy: the `1.0.x` line is the actively developed line (current snapshot `2.0.x.20260630-SNAPSHOT`); `2.0.x` and `3.0.x` are forward porting lines targeting newer JDKs. Snapshots are built on demand; tagged releases are distributed via GitHub Releases.
 
 ## 11. Contributing & License
 
