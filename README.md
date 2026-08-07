@@ -4,6 +4,8 @@
 
 [![Java](https://img.shields.io/badge/Java-17-orange)](https://github.com/easy-4-java/spring-enhance) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
+spring-enhance ("Spring Enhancement") is a broad set of Spring Framework extensions that make application code more convenient on the plain Spring Fra...
+
 ## Table of Contents
 
 - [1. Project Overview](#1-project-overview)

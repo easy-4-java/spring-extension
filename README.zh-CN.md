@@ -4,6 +4,8 @@
 
 [![Java](https://img.shields.io/badge/Java-17-orange)](https://github.com/easy-4-java/spring-enhance) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
+spring-enhance（"Spring Enhancement"）是面向纯 Spring Framework（不依赖 Spring Boot）的一组广泛扩展，让应用代码更便捷：面向模块化的 DispatcherServlet 与可插拔模块解析器、MVC 拦截器与基础控制器、基于 JDK 代理的...
+
 ## 目录
 
 - [1. Project Overview](#1-project-overview)
