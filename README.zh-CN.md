@@ -1,10 +1,10 @@
-# spring-enhance
+# spring-extension
 
 [English](./README.md) | [简体中文](./README.zh-CN.md)
 
-[![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/spring-enhance) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
+[![Java](https://img.shields.io/badge/Java-8-orange)](https://github.com/easy-4-java/spring-extension) [![License](https://img.shields.io/badge/license-Apache%202.0-green)](./LICENSE)
 
-spring-enhance（"Spring Enhancement"）是面向纯 Spring Framework（不依赖 Spring Boot）的一组广泛扩展，让应用代码更便捷：面向模块化的 DispatcherServlet 与可插拔模块解析器、MVC 拦截器与基础控制器、基于 JDK 代理的...
+spring-extension（"Spring Enhancement"）是面向纯 Spring Framework（不依赖 Spring Boot）的一组广泛扩展，让应用代码更便捷：面向模块化的 DispatcherServlet 与可插拔模块解析器、MVC 拦截器与基础控制器、基于 JDK 代理的...
 
 ## 目录
 
@@ -22,7 +22,7 @@ spring-enhance（"Spring Enhancement"）是面向纯 Spring Framework（不依�
 
 ## 1. Project Overview
 
-`spring-enhance`（"Spring Enhancement"）是面向纯 Spring Framework（不依赖 Spring Boot）的一组广泛扩展，让应用代码更便捷：面向模块化的 `DispatcherServlet` 与可插拔模块解析器、MVC 拦截器与基础控制器、基于 JDK 代理的 `EnhancedProxy`、带 AOP 集成的增强应用事件（`EnhancedEvent`、`EventAspect`）、上下文与 Bean 工厂辅助（`SpringContext`、`EnhancedBeanFactory`、`EnhancedBeanScannerConfigurer`）、属性占位符加密、可复用的属性编辑器、监听器、Quartz 任务基类以及庞大的工具包。
+`spring-extension`（"Spring Enhancement"）是面向纯 Spring Framework（不依赖 Spring Boot）的一组广泛扩展，让应用代码更便捷：面向模块化的 `DispatcherServlet` 与可插拔模块解析器、MVC 拦截器与基础控制器、基于 JDK 代理的 `EnhancedProxy`、带 AOP 集成的增强应用事件（`EnhancedEvent`、`EventAspect`）、上下文与 Bean 工厂辅助（`SpringContext`、`EnhancedBeanFactory`、`EnhancedBeanScannerConfigurer`）、属性占位符加密、可复用的属性编辑器、监听器、Quartz 任务基类以及庞大的工具包。
 
 它是 Spring 应用的扩展库——不是框架，也不是 Spring Boot Starter。
 
@@ -97,7 +97,7 @@ AbstractBaseController / generated MVC methods
 +------------------------------------+
 ```
 
-本工程为单 jar 模块（`org.springframework.biz`），按关注点组织：
+本工程为单 jar 模块（`org.springframework.extension`），按关注点组织：
 
 | 包 | 职责 |
 |:---|:---|
@@ -122,7 +122,7 @@ Maven：
 ```xml
 <dependency>
     <groupId>io.github.easy4j</groupId>
-    <artifactId>spring-enhance</artifactId>
+    <artifactId>spring-extension</artifactId>
     <version>1.0.x.20260630-SNAPSHOT</version>
 </dependency>
 ```
@@ -130,7 +130,7 @@ Maven：
 Gradle：
 
 ```groovy
-implementation 'io.github.easy4j:spring-enhance:1.0.x.20260630-SNAPSHOT'
+implementation 'io.github.easy4j:spring-extension:1.0.x.20260630-SNAPSHOT'
 ```
 
 ## 6. Quick Start
@@ -138,7 +138,7 @@ implementation 'io.github.easy4j:spring-enhance:1.0.x.20260630-SNAPSHOT'
 发布增强事件并使用 Spring 原生 `@EventListener` 消费：
 
 ```java
-import org.springframework.biz.context.event.EnhancedEvent;
+import org.springframework.extension.context.event.EnhancedEvent;
 import org.springframework.context.ApplicationEventPublisher;
 
 // 发布携带绑定载荷的事件
@@ -147,7 +147,7 @@ publisher.publishEvent(new EnhancedEvent<>(this, order));
 ```
 
 ```java
-import org.springframework.biz.context.event.EnhancedEvent;
+import org.springframework.extension.context.event.EnhancedEvent;
 import org.springframework.context.event.EventListener;
 
 @EventListener
@@ -174,8 +174,8 @@ public void onOrderCreated(EnhancedEvent<Order> event) {
 在普通（非 Spring）代码中访问 Spring Bean：
 
 ```java
-import org.springframework.biz.context.SpringContext;
-import org.springframework.biz.utils.SpringContextUtils;
+import org.springframework.extension.context.SpringContext;
+import org.springframework.extension.utils.SpringContextUtils;
 
 SpringContext context = SpringContextUtils.getContext();
 MyService service = context.getInstance(MyService.class);
@@ -185,7 +185,7 @@ context.getInstance("myService");
 面向接口的增强代理：
 
 ```java
-import org.springframework.biz.proxy.EnhancedProxy;
+import org.springframework.extension.proxy.EnhancedProxy;
 
 EnhancedProxy handler = new EnhancedProxy();
 MyService proxy = (MyService) java.lang.reflect.Proxy.newProxyInstance(
