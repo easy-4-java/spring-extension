@@ -13,6 +13,12 @@ import java.io.InputStream;
 import java.util.Map;
 
 
+/**
+ * WebResponseUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see WebResponseUtils
+ */
 public class WebResponseUtils {
 
     /**

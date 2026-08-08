@@ -18,6 +18,12 @@ package org.springframework.extension.propertyeditors;
 import hitool.core.lang3.time.DateUtils;
 import org.springframework.beans.propertyeditors.PropertiesEditor;
 
+/**
+ * DatePropertyEditor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DatePropertyEditor
+ */
 public class DatePropertyEditor extends PropertiesEditor {
 
     @Override

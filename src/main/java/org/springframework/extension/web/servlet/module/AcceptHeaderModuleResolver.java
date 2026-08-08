@@ -3,6 +3,12 @@ package org.springframework.extension.web.servlet.module;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * AcceptHeaderModuleResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see AcceptHeaderModuleResolver
+ */
 public class AcceptHeaderModuleResolver extends AbstractModuleResolver {
 
     @Override

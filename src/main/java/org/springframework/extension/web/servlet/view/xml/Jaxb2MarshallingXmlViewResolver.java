@@ -22,6 +22,12 @@ import org.springframework.web.servlet.view.xml.MarshallingView;
 
 import java.util.Locale;
 
+/**
+ * Jaxb2MarshallingXmlViewResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see Jaxb2MarshallingXmlViewResolver
+ */
 public class Jaxb2MarshallingXmlViewResolver implements ViewResolver {
 
     private Marshaller marshaller;

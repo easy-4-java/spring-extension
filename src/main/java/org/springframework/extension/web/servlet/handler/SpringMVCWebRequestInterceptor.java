@@ -4,6 +4,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.context.request.WebRequestInterceptor;
 
+/**
+ * SpringMVCWebRequestInterceptor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SpringMVCWebRequestInterceptor
+ */
 public class SpringMVCWebRequestInterceptor implements WebRequestInterceptor {
 
     /**

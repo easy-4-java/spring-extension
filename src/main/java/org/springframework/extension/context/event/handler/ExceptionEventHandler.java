@@ -17,6 +17,12 @@ package org.springframework.extension.context.event.handler;
 
 import org.springframework.extension.context.event.ExceptionEvent;
 
+/**
+ * ExceptionEventHandler.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ExceptionEventHandler
+ */
 public class ExceptionEventHandler implements EventHandler<ExceptionEvent> {
 
     @Override

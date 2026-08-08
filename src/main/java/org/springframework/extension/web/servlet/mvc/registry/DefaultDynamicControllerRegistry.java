@@ -22,6 +22,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * DefaultDynamicControllerRegistry.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DefaultDynamicControllerRegistry
+ */
 public class DefaultDynamicControllerRegistry extends DefaultDynamicBeanDefinitionRegistry
         implements DynamicControllerDefinitionRegistry, DynamicControllerRegistry {
 

@@ -20,6 +20,12 @@ import org.springframework.context.ApplicationContext;
 
 import javax.sql.DataSource;
 
+/**
+ * SpringContext.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SpringContext
+ */
 public interface SpringContext {
 
     /**

@@ -11,6 +11,12 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 
+/**
+ * DefaultDynamicBeanDefinitionRegistry.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DefaultDynamicBeanDefinitionRegistry
+ */
 public class DefaultDynamicBeanDefinitionRegistry implements DynamicBeanDefinitionRegistry, ApplicationContextAware {
 
     protected DefaultListableBeanFactory beanFactory;

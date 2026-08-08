@@ -2,6 +2,12 @@ package org.springframework.extension.web.servlet.mvc.registry;
 
 import java.io.IOException;
 
+/**
+ * DynamicGroovyControllerRegistry.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DynamicGroovyControllerRegistry
+ */
 public interface DynamicGroovyControllerRegistry {
 
     /**

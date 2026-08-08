@@ -2,6 +2,12 @@ package org.springframework.extension.web.servlet.mvc.registry;
 
 import org.springframework.beans.factory.config.BeanDefinition;
 
+/**
+ * DynamicControllerDefinitionRegistry.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DynamicControllerDefinitionRegistry
+ */
 public interface DynamicControllerDefinitionRegistry extends DynamicBeanDefinitionRegistry {
 
     /**

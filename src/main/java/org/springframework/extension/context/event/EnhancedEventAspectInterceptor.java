@@ -28,6 +28,12 @@ import org.springframework.extension.utils.AspectUtils;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 
+/**
+ * EnhancedEventAspectInterceptor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EnhancedEventAspectInterceptor
+ */
 public class EnhancedEventAspectInterceptor extends EnhancedBeanFactory implements ApplicationEventPublisherAware{
 
     protected ApplicationEventPublisher eventPublisher;

@@ -12,6 +12,12 @@ import java.net.URL;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
+/**
+ * ResourceTemplateLoader.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ResourceTemplateLoader
+ */
 public class ResourceTemplateLoader extends URLTemplateLoader {
 
     private String urlPrefix = null;

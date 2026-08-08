@@ -32,6 +32,12 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+/**
+ * MultiReloadableResourceBundleMessageSource.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see MultiReloadableResourceBundleMessageSource
+ */
 public class MultiReloadableResourceBundleMessageSource extends ReloadableResourceBundleMessageSource {
 
     protected static Logger LOG = LoggerFactory.getLogger(MultiReloadableResourceBundleMessageSource.class);

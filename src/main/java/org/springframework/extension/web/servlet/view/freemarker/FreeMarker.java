@@ -19,6 +19,12 @@ import java.io.InputStream;
 import java.util.Map;
 import java.util.Properties;
 
+/**
+ * FreeMarker.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see FreeMarker
+ */
 public class FreeMarker {
 
     protected Configuration cfg;

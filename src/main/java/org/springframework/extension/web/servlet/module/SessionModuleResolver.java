@@ -6,6 +6,12 @@ import org.springframework.web.util.WebUtils;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * SessionModuleResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SessionModuleResolver
+ */
 public class SessionModuleResolver extends AbstractModuleResolver {
 
     /**

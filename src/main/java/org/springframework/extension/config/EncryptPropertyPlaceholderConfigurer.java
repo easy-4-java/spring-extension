@@ -6,6 +6,12 @@ import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
 
 import java.util.Properties;
 
+/**
+ * EncryptPropertyPlaceholderConfigurer.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EncryptPropertyPlaceholderConfigurer
+ */
 public class EncryptPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigurer {
 
     /**

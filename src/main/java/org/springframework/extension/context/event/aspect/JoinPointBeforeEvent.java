@@ -17,6 +17,12 @@ package org.springframework.extension.context.event.aspect;
 
 import org.springframework.extension.context.event.EventInvocation;
 
+/**
+ * JoinPointBeforeEvent.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see JoinPointBeforeEvent
+ */
 @SuppressWarnings("serial")
 public class JoinPointBeforeEvent extends AbstractJoinPointEvent {
 

@@ -20,6 +20,12 @@ import hitool.core.lang3.uid.SystemClock;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * EventPoint.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EventPoint
+ */
 public class EventPoint {
 
     public static final EventPoint ROOT = new EventPoint("root" , "Event Source");

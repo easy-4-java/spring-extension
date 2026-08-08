@@ -23,6 +23,12 @@ import org.springframework.web.servlet.view.xml.MappingJackson2XmlView;
 
 import java.util.Locale;
 
+/**
+ * Jackson2XmlViewResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see Jackson2XmlViewResolver
+ */
 public class Jackson2XmlViewResolver implements ViewResolver {
 
     private Marshaller marshaller;

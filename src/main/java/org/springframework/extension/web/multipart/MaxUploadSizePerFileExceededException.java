@@ -2,6 +2,12 @@ package org.springframework.extension.web.multipart;
 
 import org.springframework.web.multipart.MultipartException;
 
+/**
+ * MaxUploadSizePerFileExceededException.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see MaxUploadSizePerFileExceededException
+ */
 @SuppressWarnings("serial")
 public class MaxUploadSizePerFileExceededException extends MultipartException {
 

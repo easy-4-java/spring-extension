@@ -18,6 +18,12 @@ package org.springframework.extension.factory;
 import hitool.core.lang3.uid.Sequence;
 import org.springframework.beans.factory.FactoryBean;
 
+/**
+ * EnhancedSequenceFactory.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EnhancedSequenceFactory
+ */
 public class EnhancedSequenceFactory extends EnhancedBeanFactory implements FactoryBean<Sequence> {
 
     protected long workerId = -1;
