@@ -7,6 +7,12 @@ import java.net.JarURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 
+/**
+ * SessionURLTemplateSource.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SessionURLTemplateSource
+ */
 public class SessionURLTemplateSource {
 
     private final URL url;

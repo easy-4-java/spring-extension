@@ -24,6 +24,12 @@ import org.springframework.extension.proxy.EnhancedProxy;
 import org.springframework.extension.utils.StringUtils;
 import org.springframework.context.ConfigurableApplicationContext;
 
+/**
+ * EnhancedBeanScannerConfigurer.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EnhancedBeanScannerConfigurer
+ */
 public class EnhancedBeanScannerConfigurer implements BeanDefinitionRegistryPostProcessor {
     /**
      * ,; \t\n

@@ -17,6 +17,12 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.*;
 
+/**
+ * CosMultipartRequest.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see CosMultipartRequest
+ */
 public class CosMultipartRequest implements MultipartRequest {
 
     protected static final int DEFAULT_MAX_POST_SIZE = 1024 * 1024; // 1 Meg

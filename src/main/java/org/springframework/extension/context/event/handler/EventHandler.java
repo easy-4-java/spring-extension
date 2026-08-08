@@ -15,6 +15,12 @@
  */
 package org.springframework.extension.context.event.handler;
 
+/**
+ * EventHandler.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EventHandler
+ */
 public interface EventHandler<T> {
 
     public void handle(T event);

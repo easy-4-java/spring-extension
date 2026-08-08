@@ -2,6 +2,12 @@ package org.springframework.extension.web.servlet.module;
 
 import org.springframework.extension.web.servlet.ModuleResolver;
 
+/**
+ * AbstractModuleResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see AbstractModuleResolver
+ */
 public abstract class AbstractModuleResolver implements ModuleResolver {
 
     /**

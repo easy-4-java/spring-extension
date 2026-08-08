@@ -24,6 +24,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * WebScopeMetadataResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see WebScopeMetadataResolver
+ */
 public class WebScopeMetadataResolver implements ScopeMetadataResolver {
 
     private final Map<String, String> scopeMap = new HashMap<String, String>();

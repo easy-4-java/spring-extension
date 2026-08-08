@@ -10,6 +10,12 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * ModuleChangeInterceptor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ModuleChangeInterceptor
+ */
 public class ModuleChangeInterceptor extends HandlerInterceptorAdapter {
 
     /**

@@ -17,6 +17,12 @@ package org.springframework.extension.context.event;
 
 import org.springframework.context.ApplicationEvent;
 
+/**
+ * EnhancedEvent.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EnhancedEvent
+ */
 @SuppressWarnings("serial")
 public class EnhancedEvent<T> extends ApplicationEvent {
 

@@ -20,6 +20,12 @@ import org.springframework.extension.proxy.EnhancedProxy;
 
 import java.lang.reflect.Proxy;
 
+/**
+ * EnhancedProxyBeanFactory.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EnhancedProxyBeanFactory
+ */
 @SuppressWarnings("unchecked")
 public class EnhancedProxyBeanFactory<T> implements FactoryBean<T>{
 

@@ -21,6 +21,12 @@ import org.apache.harmony.lang.annotation.AnnotationMember;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Proxy;
 
+/**
+ * AnnotationUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see AnnotationUtils
+ */
 public class AnnotationUtils extends org.springframework.core.annotation.AnnotationUtils {
 
     /*

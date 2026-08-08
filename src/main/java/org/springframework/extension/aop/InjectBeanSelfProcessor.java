@@ -4,6 +4,12 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.extension.aop.aware.BeanSelfAware;
 
+/**
+ * InjectBeanSelfProcessor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see InjectBeanSelfProcessor
+ */
 public class InjectBeanSelfProcessor implements BeanPostProcessor {
 
      public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
