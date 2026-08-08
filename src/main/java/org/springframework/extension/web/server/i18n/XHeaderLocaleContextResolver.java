@@ -15,6 +15,12 @@ import java.util.List;
 import java.util.Locale;
 import java.util.TimeZone;
 
+/**
+ * XHeaderLocaleContextResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see XHeaderLocaleContextResolver
+ */
 public class XHeaderLocaleContextResolver implements LocaleContextResolver {
 
     /**

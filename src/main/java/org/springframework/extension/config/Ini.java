@@ -7,6 +7,12 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.*;
 
+/**
+ * Ini.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see Ini
+ */
 public class Ini implements Map<String, Ini.Section> {
 
     private static transient final Logger log = LoggerFactory.getLogger(Ini.class);

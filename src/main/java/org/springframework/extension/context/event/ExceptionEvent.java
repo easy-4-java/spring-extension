@@ -15,6 +15,12 @@
  */
 package org.springframework.extension.context.event;
 
+/**
+ * ExceptionEvent.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ExceptionEvent
+ */
 @SuppressWarnings("serial")
 public class ExceptionEvent extends EnhancedEvent<Throwable> {
 

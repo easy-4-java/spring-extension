@@ -16,6 +16,12 @@
 package org.springframework.extension.utils;
 
 
+/**
+ * StringUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see StringUtils
+ */
 public class StringUtils extends org.springframework.util.StringUtils {
 
     /**

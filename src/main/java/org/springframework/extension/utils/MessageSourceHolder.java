@@ -8,6 +8,12 @@ import org.springframework.context.NoSuchMessageException;
 
 import java.util.Locale;
 
+/**
+ * MessageSourceHolder.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see MessageSourceHolder
+ */
 public class MessageSourceHolder extends EnhancedBeanFactory {
 
     private static Object[] EMPTY = new Object[0];

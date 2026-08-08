@@ -12,6 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Locale;
 
+/**
+ * LocaleContextFilter.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see LocaleContextFilter
+ */
 public class LocaleContextFilter extends OncePerRequestFilter {
 
     /** LocaleResolver used by this servlet. */

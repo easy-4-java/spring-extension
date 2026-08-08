@@ -24,6 +24,12 @@ import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * DataSourceRoutingKeyHolder.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DataSourceRoutingKeyHolder
+ */
 public class DataSourceRoutingKeyHolder {
 
     public static final String MASTER_DATASOURCE = "defaultDataSource";

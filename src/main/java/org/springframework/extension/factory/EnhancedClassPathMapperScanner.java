@@ -26,6 +26,12 @@ import org.springframework.core.type.filter.AssignableTypeFilter;
 import java.util.Arrays;
 import java.util.Set;
 
+/**
+ * EnhancedClassPathMapperScanner.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EnhancedClassPathMapperScanner
+ */
 public class EnhancedClassPathMapperScanner extends ClassPathBeanDefinitionScanner  {
 
    public EnhancedClassPathMapperScanner(BeanDefinitionRegistry registry,Class<?> kInterface) {

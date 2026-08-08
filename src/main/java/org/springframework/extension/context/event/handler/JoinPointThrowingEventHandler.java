@@ -23,6 +23,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.extension.context.event.EventInvocation;
 import org.springframework.extension.context.event.aspect.JoinPointThrowingEvent;
 
+/**
+ * JoinPointThrowingEventHandler.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see JoinPointThrowingEventHandler
+ */
 public class JoinPointThrowingEventHandler implements EventHandler<JoinPointThrowingEvent> {
 
     protected Logger LOG = LoggerFactory.getLogger(getClass());

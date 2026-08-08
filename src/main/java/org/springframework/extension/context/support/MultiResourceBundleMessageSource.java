@@ -31,6 +31,12 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+/**
+ * MultiResourceBundleMessageSource.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see MultiResourceBundleMessageSource
+ */
 public class MultiResourceBundleMessageSource extends ResourceBundleMessageSource {
 
     protected static Logger LOG = LoggerFactory.getLogger(MultiResourceBundleMessageSource.class);

@@ -23,6 +23,12 @@ import org.springframework.context.ApplicationContext;
 
 import javax.sql.DataSource;
 
+/**
+ * AbstractSpringInstanceContext.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see AbstractSpringInstanceContext
+ */
 public  class AbstractSpringInstanceContext implements SpringContext {
 
     protected static Logger LOG = LoggerFactory.getLogger(AbstractSpringInstanceContext.class);

@@ -6,6 +6,12 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * SpringMVCInterceptor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SpringMVCInterceptor
+ */
 public class SpringMVCInterceptor implements HandlerInterceptor {
 
     /**

@@ -23,6 +23,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.extension.context.event.EventInvocation;
 import org.springframework.extension.context.event.aspect.JoinPointAroundEvent;
 
+/**
+ * JoinPointAroundEventHandler.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see JoinPointAroundEventHandler
+ */
 public class JoinPointAroundEventHandler implements EventHandler<JoinPointAroundEvent> {
 
     protected Logger LOG = LoggerFactory.getLogger(getClass());

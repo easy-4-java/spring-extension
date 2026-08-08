@@ -5,6 +5,12 @@ import org.springframework.web.context.support.WebApplicationContextUtils;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
+/**
+ * SpringAutowireServlet.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SpringAutowireServlet
+ */
 @SuppressWarnings("serial")
 public class SpringAutowireServlet extends HttpServlet {
 

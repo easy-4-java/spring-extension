@@ -23,6 +23,12 @@ import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
+/**
+ * ModuleResourceBundleMessageSource.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ModuleResourceBundleMessageSource
+ */
 public class ModuleResourceBundleMessageSource extends org.springframework.context.support.ResourceBundleMessageSource {
 
     protected String[] basenames = new String[0];

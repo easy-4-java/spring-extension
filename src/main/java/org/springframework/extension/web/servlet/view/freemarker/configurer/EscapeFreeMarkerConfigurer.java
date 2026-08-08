@@ -6,6 +6,12 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
 import java.util.List;
 
+/**
+ * EscapeFreeMarkerConfigurer.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EscapeFreeMarkerConfigurer
+ */
 public class EscapeFreeMarkerConfigurer extends FreeMarkerConfigurer{
 
   @Override

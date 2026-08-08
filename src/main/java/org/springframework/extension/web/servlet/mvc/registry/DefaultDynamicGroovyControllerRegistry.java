@@ -8,6 +8,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * DefaultDynamicGroovyControllerRegistry.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DefaultDynamicGroovyControllerRegistry
+ */
 public class DefaultDynamicGroovyControllerRegistry extends DefaultDynamicControllerRegistry
         implements DynamicGroovyControllerRegistry {
 

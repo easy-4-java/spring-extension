@@ -30,6 +30,12 @@ import org.springframework.util.ReflectionUtils;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 
+/**
+ * AopProxyUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see AopProxyUtils
+ */
 public class AopProxyUtils {
 
     /*

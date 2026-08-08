@@ -22,6 +22,12 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 
+/**
+ * HtmlTemplateLoader.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see HtmlTemplateLoader
+ */
 public class HtmlTemplateLoader implements TemplateLoader {
 
     private static final String HTML_ESCAPE_PREFIX= "<#escape x as x?html>";

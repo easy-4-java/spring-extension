@@ -31,6 +31,12 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * WebRequestUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see WebRequestUtils
+ */
 public class WebRequestUtils {
 
     protected static Logger LOG = LoggerFactory.getLogger(WebRequestUtils.class);

@@ -25,6 +25,12 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * VersionRangeMappingRequestCondition.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see VersionRangeMappingRequestCondition
+ */
 public class VersionRangeMappingRequestCondition extends AbstractRequestCondition<VersionRangeMappingRequestCondition> {
 
     private Logger logger = LoggerFactory.getLogger(VersionRangeMappingRequestCondition.class);

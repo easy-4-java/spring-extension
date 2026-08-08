@@ -15,6 +15,12 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
+/**
+ * ResourceBundleUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ResourceBundleUtils
+ */
 public class ResourceBundleUtils {
 
     protected static Logger LOG = LoggerFactory.getLogger(ResourceBundleUtils.class);

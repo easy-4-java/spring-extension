@@ -20,6 +20,12 @@ import org.springframework.web.method.HandlerMethod;
 import javax.servlet.ServletException;
 import java.util.List;
 
+/**
+ * DuplicateHandlerMethodException.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see DuplicateHandlerMethodException
+ */
 @SuppressWarnings("serial")
 public class DuplicateHandlerMethodException extends ServletException {
 

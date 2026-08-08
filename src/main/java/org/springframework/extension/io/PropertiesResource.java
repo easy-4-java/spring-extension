@@ -28,6 +28,12 @@ import java.net.URI;
 import java.net.URL;
 import java.util.Properties;
 
+/**
+ * PropertiesResource.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see PropertiesResource
+ */
 public class PropertiesResource extends AbstractResource implements WritableResource {
 
     public static final PropertiesResource EMPTY_RESOURCE = new PropertiesResource();
