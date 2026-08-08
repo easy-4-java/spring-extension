@@ -22,6 +22,12 @@ import org.springframework.context.MessageSource;
 
 import java.util.Map;
 
+/**
+ * MultipleMessageSourceFactory.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see MultipleMessageSourceFactory
+ */
 public class MultipleMessageSourceFactory extends EnhancedBeanFactory implements FactoryBean<MessageSource> {
 
     @Override

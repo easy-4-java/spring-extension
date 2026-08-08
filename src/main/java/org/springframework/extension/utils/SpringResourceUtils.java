@@ -7,6 +7,12 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 
 import java.io.IOException;
 
+/**
+ * SpringResourceUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SpringResourceUtils
+ */
 public abstract class SpringResourceUtils extends org.springframework.util.ResourceUtils{
 
     //spring 资源路径匹配解析器

@@ -9,6 +9,12 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Map;
 
+/**
+ * QueryParamsUrlTemplateHandler.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see QueryParamsUrlTemplateHandler
+ */
 public class QueryParamsUrlTemplateHandler implements UriTemplateHandler {
 
     private boolean strictEncoding;

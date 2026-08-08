@@ -18,6 +18,12 @@ package org.springframework.extension.propertyeditors;
 import org.apache.commons.lang3.StringEscapeUtils;
 import org.springframework.beans.propertyeditors.PropertiesEditor;
 
+/**
+ * StringPropertyEditor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see StringPropertyEditor
+ */
 public class StringPropertyEditor extends PropertiesEditor {
 
     @Override

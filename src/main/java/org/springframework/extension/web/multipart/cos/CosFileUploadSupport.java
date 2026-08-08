@@ -12,6 +12,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * CosFileUploadSupport.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see CosFileUploadSupport
+ */
 public class CosFileUploadSupport {
 
     /** Logger available to subclasses */

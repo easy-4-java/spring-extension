@@ -19,6 +19,12 @@ import org.aspectj.lang.JoinPoint;
 
 import java.lang.reflect.Method;
 
+/**
+ * EventInvocation.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see EventInvocation
+ */
 public class EventInvocation {
 
     /**

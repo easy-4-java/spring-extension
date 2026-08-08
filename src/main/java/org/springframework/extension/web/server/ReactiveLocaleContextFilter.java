@@ -9,6 +9,12 @@ import org.springframework.web.server.WebFilterChain;
 import org.springframework.web.server.i18n.LocaleContextResolver;
 import reactor.core.publisher.Mono;
 
+/**
+ * ReactiveLocaleContextFilter.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ReactiveLocaleContextFilter
+ */
 public class ReactiveLocaleContextFilter implements WebFilter {
 
     /** LocaleContextResolver used by this Web Filter. */

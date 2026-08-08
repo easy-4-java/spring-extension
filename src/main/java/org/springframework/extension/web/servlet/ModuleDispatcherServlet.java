@@ -7,6 +7,12 @@ import org.springframework.web.servlet.DispatcherServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * ModuleDispatcherServlet.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ModuleDispatcherServlet
+ */
 @SuppressWarnings("serial")
 public class ModuleDispatcherServlet extends DispatcherServlet {
 

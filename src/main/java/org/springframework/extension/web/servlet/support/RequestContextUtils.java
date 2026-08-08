@@ -7,6 +7,12 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * RequestContextUtils.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see RequestContextUtils
+ */
 public abstract class RequestContextUtils extends org.springframework.web.servlet.support.RequestContextUtils {
 
     /**

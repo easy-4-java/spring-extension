@@ -17,6 +17,12 @@ package org.springframework.extension.propertyeditors;
 
 import org.springframework.beans.propertyeditors.PropertiesEditor;
 
+/**
+ * FloatPropertyEditor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see FloatPropertyEditor
+ */
 public class FloatPropertyEditor extends PropertiesEditor {
 
     @Override

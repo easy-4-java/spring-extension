@@ -18,6 +18,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
 
+/**
+ * SpringMVCPerformanceInterceptor.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see SpringMVCPerformanceInterceptor
+ */
 public class SpringMVCPerformanceInterceptor extends HandlerInterceptorAdapter implements ApplicationEventPublisherAware, InitializingBean {
 
     private static final ThreadLocal<Long> startTimeThreadLocal = new NamedThreadLocal<Long>("ThreadLocal StartTime");

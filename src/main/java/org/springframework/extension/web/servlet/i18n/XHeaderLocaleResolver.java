@@ -12,6 +12,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 import java.util.TimeZone;
 
+/**
+ * XHeaderLocaleResolver.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see XHeaderLocaleResolver
+ */
 public class XHeaderLocaleResolver extends AbstractLocaleContextResolver {
 
     /**

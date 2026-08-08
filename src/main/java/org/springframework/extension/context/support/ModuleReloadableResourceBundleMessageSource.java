@@ -25,6 +25,12 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Properties;
 
+/**
+ * ModuleReloadableResourceBundleMessageSource.
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
+ * @since 3.0.0
+ * @see ModuleReloadableResourceBundleMessageSource
+ */
 public class ModuleReloadableResourceBundleMessageSource extends ReloadableResourceBundleMessageSource {
 
     protected static List<Locale> supporedLocales = new ArrayList<Locale>();
