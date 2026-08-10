@@ -6,7 +6,7 @@ import org.springframework.beans.factory.InitializingBean;
 
 /**
  * 抽象的Quartz定时任务对象
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public abstract class AbstractQuartzTask implements InitializingBean{
 
