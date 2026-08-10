@@ -7,7 +7,7 @@ import org.springframework.beans.BeanUtils;
 import java.lang.reflect.Method;
 
 /**
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public final class AspectUtils {
 

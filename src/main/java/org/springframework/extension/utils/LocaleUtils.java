@@ -8,7 +8,7 @@ import java.io.File;
 import java.util.Locale;
 
 /**
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class LocaleUtils extends org.apache.commons.lang3.LocaleUtils {
 

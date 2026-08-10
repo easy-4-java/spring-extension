@@ -22,7 +22,7 @@ import java.lang.reflect.Method;
 
 /**
  * 代理类：统一处理时间——约定大于配置
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class EnhancedProxy implements InvocationHandler, Serializable {
 

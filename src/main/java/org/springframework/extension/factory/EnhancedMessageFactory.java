@@ -20,7 +20,7 @@ import org.springframework.extension.context.support.MultiResourceBundleMessageS
 import org.springframework.extension.utils.LocaleUtils;
 
 /**
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public abstract class EnhancedMessageFactory extends EnhancedBeanFactory {
 
