@@ -523,6 +523,7 @@
         <spring-framework.version>5.3.39</spring-framework.version>
         <easy4j-hitool.version>2.0.x.20260630-SNAPSHOT</easy4j-hitool.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
+        <maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version>
     </properties>
 
     <!-- 依赖版本统一管理（dependencyManagement） -->
