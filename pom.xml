@@ -527,6 +527,7 @@
             <maven-resources-plugin.version>3.5.0</maven-resources-plugin.version>
             <maven-source-plugin.version>3.4.0</maven-source-plugin.version>
             <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
+        <maven-jacoco-plugin.version>0.8.15</maven-jacoco-plugin.version>
     </properties>
 
     <!-- 依赖版本统一管理（dependencyManagement） -->
