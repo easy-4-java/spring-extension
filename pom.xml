@@ -68,10 +68,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Dependency versions -->
         <commons-beanutils.version>1.11.0</commons-beanutils.version>
-        <commons-codec.version>1.22.0</commons-codec.version>
-        <commons-fileupload.version>1.6.0</commons-fileupload.version>
-        <commons-io.version>2.22.0</commons-io.version>
-        <commons-lang3.version>3.20.0</commons-lang3.version>
+        <commons-codec.version>1.18.0</commons-codec.version>
+        <commons-fileupload.version>1.5.0</commons-fileupload.version>
+        <commons-io.version>2.20.0</commons-io.version>
+        <commons-lang3.version>3.18.0</commons-lang3.version>
         <cos.version>2020.4</cos.version>
         <easy4j-hitool.version>1.0.x.20260630-SNAPSHOT</easy4j-hitool.version>
         <fastjson2.version>2.0.60</fastjson2.version>
