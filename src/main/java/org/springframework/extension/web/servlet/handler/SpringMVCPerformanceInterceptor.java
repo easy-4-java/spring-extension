@@ -12,10 +12,10 @@ import org.springframework.core.NamedThreadLocal;
 import org.springframework.web.context.support.RequestHandledEvent;
 import org.springframework.web.context.support.ServletRequestHandledEvent;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+import org.springframework.web.servlet.HandlerInterceptor;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.text.SimpleDateFormat;
 
 /**
@@ -24,7 +24,7 @@ import java.text.SimpleDateFormat;
  * @since 3.0.0
  * @see SpringMVCPerformanceInterceptor
  */
-public class SpringMVCPerformanceInterceptor extends HandlerInterceptorAdapter implements ApplicationEventPublisherAware, InitializingBean {
+public class SpringMVCPerformanceInterceptor implements HandlerInterceptor, ApplicationEventPublisherAware, InitializingBean {
 
     private static final ThreadLocal<Long> startTimeThreadLocal = new NamedThreadLocal<Long>("ThreadLocal StartTime");
     protected Logger LOG = LoggerFactory.getLogger(this.getClass());
@@ -47,12 +47,11 @@ public class SpringMVCPerformanceInterceptor extends HandlerInterceptorAdapter i
         if (LOG.isDebugEnabled()){
             LOG.debug("开始计时: {}  URI: {}", sdf.format(beginTime), request.getRequestURI());
         }
-        return super.preHandle(request, response, handler);
+        return true;
     }
 
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        super.postHandle(request, response, handler, modelAndView);
         if (modelAndView != null){
             LOG.info("ViewName: " + modelAndView.getViewName());
         }
@@ -90,7 +89,6 @@ public class SpringMVCPerformanceInterceptor extends HandlerInterceptorAdapter i
                 request.getRequestedSessionId(), request.getRemoteUser(), processingTimeMillis);
         getEventPublisher().publishEvent(event);
 
-        super.afterCompletion(request, response, handler, ex);
     }
 
     @Override

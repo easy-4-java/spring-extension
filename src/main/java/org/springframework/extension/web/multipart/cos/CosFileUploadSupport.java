@@ -73,8 +73,8 @@ public class CosFileUploadSupport {
      * ServletRequest.setCharacterEncoding method.
      * </p>
      * @param defaultEncoding the character encoding to use
-     * @see javax.servlet.ServletRequest#getCharacterEncoding
-     * @see javax.servlet.ServletRequest#setCharacterEncoding
+     * @see jakarta.servlet.ServletRequest#getCharacterEncoding
+     * @see jakarta.servlet.ServletRequest#setCharacterEncoding
      * @see WebUtils#DEFAULT_CHARACTER_ENCODING
      */
     public void setDefaultEncoding(String defaultEncoding) {

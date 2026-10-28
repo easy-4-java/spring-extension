@@ -61,18 +61,20 @@ spring-extension（"Spring Enhancement"）是面向纯 Spring Framework（不依
 | 要求 | 版本 |
 |:---|:---|
 | JDK | 21+ |
-| Maven | 3.6+ |
-| Spring Framework | 5.3.x（由 `spring-framework-bom` 管理：core、beans、context、web、webmvc、aop、aspects、jdbc、jms、orm、oxm、tx、messaging、webflux 等） |
-| easy4j 兄弟模块 | `hitool-core`（同一 `1.0.x.*` 版本线） |
-| 其他运行依赖 | freemarker、`com.jfinal:cos`、commons-fileupload、commons-io、commons-lang3、commons-codec、javax.servlet-api、validation-api |
+| Maven | 4.0.0-rc-5+ |
+| Spring Framework | 7.0.8（由 `spring-framework-bom` 管理：core、beans、context、web、webmvc、aop、aspects、jdbc、jms、orm、oxm、tx、messaging、webflux 等） |
+| easy4j 兄弟模块 | `hitool-core`（同一 `3.0.x.*` 版本线） |
+| 其他运行依赖 | freemarker、仅供重命名策略接口使用的 `com.jfinal:cos`、Commons FileUpload 2 Jakarta Servlet 6、commons-io、commons-lang3、commons-codec、Jakarta Servlet API、Jakarta Validation API |
 
 版本线：
 
 | 分支 | JDK | 版本模式 | 说明 |
 |:---|:---|:---|:---|
-| `feature/1.0.x` | 8 | `1.0.x.*` | 当前开发线；Spring 5.x 时代 |
-| `feature/2.0.x` | 17 | `2.0.x.*` | 下一条版本线 |
-| `feature/3.0.x` | 21 | `3.0.x.*` | 未来版本线 |
+| `feature/1.0.x` | 8 | `1.0.x.*` | Spring 5.x 版本线 |
+| `feature/2.0.x` | 17 | `2.0.x.*` | Spring 6 迁移待完成 |
+| `feature/3.0.x` | 21 | `3.0.x.*` | Spring 7 与 Jakarta Servlet 6 版本线 |
+
+Spring 7 已移除 MVC 主题解析类型。本线在 `org.springframework.extension.web.servlet.theme` 提供 `ThemeResolver`、`SessionThemeResolver` 和 `CookieThemeResolver`，供 `NestedThemeResolver` 的使用方迁移。
 
 ## 4. Architecture & Modules
 

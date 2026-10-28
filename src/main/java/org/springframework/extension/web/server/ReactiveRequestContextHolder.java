@@ -17,7 +17,6 @@ package org.springframework.extension.web.server;
 
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
-import org.springframework.web.reactive.function.server.ServerResponse.Context;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
@@ -33,30 +32,27 @@ public class ReactiveRequestContextHolder {
     static final Class<ServerHttpResponse> RESPONSE_KEY = ServerHttpResponse.class;
 
     /**
-     * Gets the {@code Mono<ServerWebExchange>} from Reactor {@link Context}
+     * Gets the {@code Mono<ServerWebExchange>} from Reactor context.
      * @return the {@code Mono<ServerWebExchange>}
      */
     public static Mono<ServerWebExchange> getExchange() {
-        return Mono.subscriberContext()
-            .map(ctx -> ctx.get(EXCHANGE_KEY));
+        return Mono.deferContextual(ctx -> Mono.just(ctx.get(EXCHANGE_KEY)));
     }
 
     /**
-     * Gets the {@code Mono<ServerHttpRequest>} from Reactor {@link Context}
+     * Gets the {@code Mono<ServerHttpRequest>} from Reactor context.
      * @return the {@code Mono<ServerHttpRequest>}
      */
     public static Mono<ServerHttpRequest> getRequest() {
-        return Mono.subscriberContext()
-            .map(ctx -> ctx.get(REQUEST_KEY));
+        return Mono.deferContextual(ctx -> Mono.just(ctx.get(REQUEST_KEY)));
     }
 
     /**
-     * Gets the {@code Mono<ServerHttpResponse>} from Reactor {@link Context}
+     * Gets the {@code Mono<ServerHttpResponse>} from Reactor context.
      * @return the {@code Mono<ServerHttpResponse>}
      */
     public static Mono<ServerHttpResponse> getResponse() {
-        return Mono.subscriberContext()
-            .map(ctx -> ctx.get(RESPONSE_KEY));
+        return Mono.deferContextual(ctx -> Mono.just(ctx.get(RESPONSE_KEY)));
     }
 
 }

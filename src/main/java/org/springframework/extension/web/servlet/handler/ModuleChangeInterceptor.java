@@ -3,12 +3,12 @@ package org.springframework.extension.web.servlet.handler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.util.WebUtils;
 
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * ModuleChangeInterceptor.
@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
  * @since 3.0.0
  * @see ModuleChangeInterceptor
  */
-public class ModuleChangeInterceptor extends HandlerInterceptorAdapter {
+public class ModuleChangeInterceptor implements HandlerInterceptor {
 
     /**
      * Name of the session attribute that holds the module.

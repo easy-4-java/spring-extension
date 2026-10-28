@@ -53,14 +53,30 @@ public class MethodRequestMappingHandlerMapping extends RequestMappingHandlerMap
             patterns = new String[] { classNameExceptAction + "!" + method.getName() };
         }
 
+        List<String> compatiblePatterns = new ArrayList<>();
+        for (String pattern : patterns) {
+            compatiblePatterns.add(pattern);
+            if (useTrailingSlashMatch && !pattern.endsWith("/")) {
+                compatiblePatterns.add(pattern + "/");
+            }
+            if (useSuffixPatternMatch && !pattern.contains("*")) {
+                if (fileExtensions.isEmpty()) {
+                    compatiblePatterns.add(pattern + ".*");
+                } else {
+                    for (String extension : fileExtensions) {
+                        compatiblePatterns.add(pattern + "." + extension);
+                    }
+                }
+            }
+        }
+
         return new RequestMappingInfo(
-                new PatternsRequestCondition(patterns, getUrlPathHelper(), getPathMatcher(), this.useSuffixPatternMatch,
-                        this.useTrailingSlashMatch, this.fileExtensions),
+                new PatternsRequestCondition(compatiblePatterns.toArray(new String[0])),
                 new RequestMethodsRequestCondition(annotation.method()),
                 new ParamsRequestCondition(annotation.params()), new HeadersRequestCondition(annotation.headers()),
                 new ConsumesRequestCondition(annotation.consumes(), annotation.headers()), new ProducesRequestCondition(
                         annotation.produces(), annotation.headers(), this.contentNegotiationManager),
-                customCondition);
+                null, customCondition);
     }
 
 }

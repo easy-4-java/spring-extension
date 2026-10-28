@@ -13,11 +13,11 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
-import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.*;
@@ -31,7 +31,7 @@ import java.util.*;
  *    2、针对Spring MVC文件上传大小限制出现的这个问题，可以换用tomcat7.0.39+版本的tomcat服务器；或者不限制大小，采用拦截器判断处理。
  *
  */
-public class FileUploadAcceptInterceptor extends HandlerInterceptorAdapter implements MessageSourceAware {
+public class FileUploadAcceptInterceptor implements HandlerInterceptor, MessageSourceAware {
 
 protected static final Logger LOG = LoggerFactory.getLogger(FileUploadAcceptInterceptor.class);
 

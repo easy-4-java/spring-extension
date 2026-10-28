@@ -9,8 +9,8 @@ import org.springframework.web.multipart.MultipartResolver;
 import org.springframework.web.multipart.support.DefaultMultipartHttpServletRequest;
 import org.springframework.web.util.WebUtils;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
@@ -154,7 +154,7 @@ public class CosMultipartResolver extends CosFileUploadSupport implements Multip
      *
      * @param request current HTTP request
      * @return the encoding for the request (never <code>null</code>)
-     * @see javax.servlet.ServletRequest#getCharacterEncoding
+     * @see jakarta.servlet.ServletRequest#getCharacterEncoding
      * @see #setDefaultEncoding
      */
     protected String determineEncoding(HttpServletRequest request) {

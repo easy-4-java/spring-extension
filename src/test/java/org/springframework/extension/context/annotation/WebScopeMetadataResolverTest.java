@@ -1,7 +1,9 @@
 package org.springframework.extension.context.annotation;
 
+import jakarta.inject.Singleton;
 import org.junit.Test;
 import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.annotation.AnnotatedGenericBeanDefinition;
 import org.springframework.context.annotation.ScopeMetadata;
 
 import static org.junit.Assert.*;
@@ -40,5 +42,16 @@ public class WebScopeMetadataResolverTest {
         WebScopeMetadataResolver resolver = new WebScopeMetadataResolver();
         resolver.registerScope("my.Scope", BeanDefinition.SCOPE_PROTOTYPE);
         // Should not throw
+    }
+
+    @Test
+    public void shouldResolveJakartaSingletonScope() {
+        WebScopeMetadataResolver resolver = new WebScopeMetadataResolver();
+        ScopeMetadata metadata = resolver.resolveScopeMetadata(new AnnotatedGenericBeanDefinition(JakartaSingletonBean.class));
+        assertEquals(BeanDefinition.SCOPE_SINGLETON, metadata.getScopeName());
+    }
+
+    @Singleton
+    private static class JakartaSingletonBean {
     }
 }

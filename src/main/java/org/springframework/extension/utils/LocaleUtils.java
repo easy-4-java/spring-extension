@@ -2,8 +2,8 @@ package org.springframework.extension.utils;
 
 import org.apache.commons.io.FilenameUtils;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import java.io.File;
 import java.util.Locale;
 

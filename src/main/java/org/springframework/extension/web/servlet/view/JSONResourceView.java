@@ -9,7 +9,7 @@ import org.springframework.web.servlet.View;
 public class JSONResourceView extends StaticResourceView {
 
     public JSONResourceView(String content) {
-        super(content, MediaType.APPLICATION_JSON_UTF8_VALUE);
+        super(content, MediaType.APPLICATION_JSON_VALUE + ";charset=UTF-8");
     }
 
 }

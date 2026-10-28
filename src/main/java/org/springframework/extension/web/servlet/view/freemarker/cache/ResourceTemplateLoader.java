@@ -3,7 +3,7 @@ package org.springframework.extension.web.servlet.view.freemarker.cache;
 import freemarker.cache.URLTemplateLoader;
 import org.xml.sax.InputSource;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URI;
