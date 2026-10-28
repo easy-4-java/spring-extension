@@ -36,6 +36,6 @@ public class DuplicateHandlerMethodExceptionTest {
     public void shouldExtendServletException() {
         List<HandlerMethod> methods = new ArrayList<>();
         DuplicateHandlerMethodException ex = new DuplicateHandlerMethodException("/api/test", methods);
-        assertTrue(ex instanceof javax.servlet.ServletException);
+        assertTrue(ex instanceof jakarta.servlet.ServletException);
     }
 }

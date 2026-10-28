@@ -2,13 +2,13 @@ package org.springframework.extension.utils;
 
 import org.apache.commons.io.FilenameUtils;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
 import java.io.File;
 import java.util.Locale;
 
 /**
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 public class LocaleUtils extends org.apache.commons.lang3.LocaleUtils {
 

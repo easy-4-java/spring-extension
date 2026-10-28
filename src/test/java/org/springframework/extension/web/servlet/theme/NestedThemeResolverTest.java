@@ -66,7 +66,7 @@ public class NestedThemeResolverTest {
         MockHttpServletRequest request = new MockHttpServletRequest();
         MockHttpServletResponse response = new MockHttpServletResponse();
         resolver.setThemeName(request, response, "newTheme");
-        // Should not throw
+        assertEquals("newTheme", sessionResolver.resolveThemeName(request));
     }
 
     @Test
@@ -82,5 +82,15 @@ public class NestedThemeResolverTest {
     public void shouldHaveDefaultThemeName() {
         NestedThemeResolver resolver = new NestedThemeResolver();
         assertNotNull(resolver.getDefaultThemeName());
+    }
+
+    @Test
+    public void shouldResolveCookieTheme() {
+        CookieThemeResolver cookieResolver = new CookieThemeResolver();
+        MockHttpServletRequest request = new MockHttpServletRequest();
+        MockHttpServletResponse response = new MockHttpServletResponse();
+        cookieResolver.setThemeName(request, response, "dark");
+        request.setCookies(response.getCookies());
+        assertEquals("dark", cookieResolver.resolveThemeName(request));
     }
 }

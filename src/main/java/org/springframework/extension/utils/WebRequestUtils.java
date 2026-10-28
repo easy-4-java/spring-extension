@@ -25,7 +25,7 @@ import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.Enumeration;
 import java.util.HashMap;
@@ -118,7 +118,7 @@ public class WebRequestUtils {
             Map<String, Object> params) throws IOException {
 
         HttpHeaders headers = new HttpHeaders();
-        headers.addAll(multiHeaderMap(request));
+        multiHeaderMap(request).forEach(headers::addAll);
         headers.setContentType(MediaType.parseMediaType(request.getContentType()));
 
         MultiValueMap<String, Object> requestBody = new LinkedMultiValueMap<String, Object>();

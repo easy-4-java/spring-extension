@@ -61,18 +61,18 @@ Project status: pre-release development line (`1.0.x.*` snapshots); public API i
 | Requirement | Version |
 |:---|:---|
 | JDK | 17+ |
-| Maven | 3.6+ |
-| Spring Framework | 5.3.x (managed by `spring-framework-bom`: core, beans, context, web, webmvc, aop, aspects, jdbc, jms, orm, oxm, tx, messaging, webflux, ...) |
-| easy4j sibling module | `hitool-core` (same `1.0.x.*` line) |
-| Other runtime deps | freemarker, `com.jfinal:cos`, commons-fileupload, commons-io, commons-lang3, commons-codec, javax.servlet-api, validation-api |
+| Maven | 3.9.16+ |
+| Spring Framework | 6.2.6 (managed by `spring-framework-bom`: core, beans, context, web, webmvc, aop, aspects, jdbc, jms, orm, oxm, tx, messaging, webflux, ...) |
+| easy4j sibling module | `hitool-core` (same `2.0.x.*` line) |
+| Other runtime deps | freemarker, `com.jfinal:cos`, Commons FileUpload 2 Jakarta Servlet 6, commons-io, commons-lang3, commons-codec, Jakarta Servlet API, Jakarta Validation API |
 
 Version lines:
 
 | Branch | JDK | Version pattern | Notes |
 |:---|:---|:---|:---|
-| `feature/1.0.x` | 8 | `1.0.x.*` | Current line; Spring 5.x era |
-| `feature/2.0.x` | 17 | `2.0.x.*` | Next line |
-| `feature/3.0.x` | 21 | `3.0.x.*` | Future line |
+| `feature/1.0.x` | 8 | `1.0.x.*` | Spring 5.x line |
+| `feature/2.0.x` | 17 | `2.0.x.*` | Spring 6 and Jakarta line |
+| `feature/3.0.x` | 21 | `3.0.x.*` | Spring 7 line |
 
 ## 4. Architecture & Modules
 
@@ -214,7 +214,7 @@ Three parallel version lines are maintained:
 | `feature/2.0.x` | 17 | `2.0.x.*` |
 | `feature/3.0.x` | 21 | `3.0.x.*` |
 
-Maintenance policy: the `1.0.x` line is the actively developed line (current snapshot `2.0.x.20260630-SNAPSHOT`); `2.0.x` and `3.0.x` are forward porting lines targeting newer JDKs. Snapshots are built on demand; tagged releases are distributed via GitHub Releases.
+Maintenance policy: the three lines track JDK 8, 17, and 21 respectively; this checkout builds `2.0.x.20260630-SNAPSHOT` for JDK 17. Snapshots are built on demand; tagged releases are distributed via GitHub Releases.
 
 ## 11. Contributing & License
 

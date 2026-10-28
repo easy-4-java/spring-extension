@@ -33,10 +33,10 @@ public class ReactiveRequestContextFilter implements WebFilter {
     public Mono<Void> filter(ServerWebExchange exchange, WebFilterChain chain) {
         ServerHttpRequest request = exchange.getRequest();
         ServerHttpResponse response = exchange.getResponse();
-        return chain.filter(exchange)
-            .subscriberContext(ctx -> ctx.put(ReactiveRequestContextHolder.EXCHANGE_KEY, exchange))
-            .subscriberContext(ctx -> ctx.put(ReactiveRequestContextHolder.REQUEST_KEY, request))
-            .subscriberContext(ctx -> ctx.put(ReactiveRequestContextHolder.RESPONSE_KEY, response));
+        return chain.filter(exchange).contextWrite(ctx -> ctx
+                .put(ReactiveRequestContextHolder.EXCHANGE_KEY, exchange)
+                .put(ReactiveRequestContextHolder.REQUEST_KEY, request)
+                .put(ReactiveRequestContextHolder.RESPONSE_KEY, response));
     }
 
 }

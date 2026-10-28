@@ -17,7 +17,7 @@ package org.springframework.extension.web;
 
 import org.springframework.web.method.HandlerMethod;
 
-import javax.servlet.ServletException;
+import jakarta.servlet.ServletException;
 import java.util.List;
 
 /**

@@ -53,7 +53,7 @@ public class QueryParamsUrlTemplateHandler implements UriTemplateHandler {
     public URI expand(String uriTemplate, Map<String, ?> uriVariables) {
 
 
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(uriTemplate);
+        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(uriTemplate);
         for (Map.Entry<String, ?> varEntry : uriVariables.entrySet()) {
             builder.queryParam(varEntry.getKey(), varEntry.getValue());
         }

@@ -61,18 +61,18 @@ spring-extension（"Spring Enhancement"）是面向纯 Spring Framework（不依
 | 要求 | 版本 |
 |:---|:---|
 | JDK | 17+ |
-| Maven | 3.6+ |
-| Spring Framework | 5.3.x（由 `spring-framework-bom` 管理：core、beans、context、web、webmvc、aop、aspects、jdbc、jms、orm、oxm、tx、messaging、webflux 等） |
-| easy4j 兄弟模块 | `hitool-core`（同一 `1.0.x.*` 版本线） |
-| 其他运行依赖 | freemarker、`com.jfinal:cos`、commons-fileupload、commons-io、commons-lang3、commons-codec、javax.servlet-api、validation-api |
+| Maven | 3.9.16+ |
+| Spring Framework | 6.2.6（由 `spring-framework-bom` 管理：core、beans、context、web、webmvc、aop、aspects、jdbc、jms、orm、oxm、tx、messaging、webflux 等） |
+| easy4j 兄弟模块 | `hitool-core`（同一 `2.0.x.*` 版本线） |
+| 其他运行依赖 | freemarker、`com.jfinal:cos`、Commons FileUpload 2 Jakarta Servlet 6、commons-io、commons-lang3、commons-codec、Jakarta Servlet API、Jakarta Validation API |
 
 版本线：
 
 | 分支 | JDK | 版本模式 | 说明 |
 |:---|:---|:---|:---|
-| `feature/1.0.x` | 8 | `1.0.x.*` | 当前开发线；Spring 5.x 时代 |
-| `feature/2.0.x` | 17 | `2.0.x.*` | 下一条版本线 |
-| `feature/3.0.x` | 21 | `3.0.x.*` | 未来版本线 |
+| `feature/1.0.x` | 8 | `1.0.x.*` | Spring 5.x 版本线 |
+| `feature/2.0.x` | 17 | `2.0.x.*` | Spring 6 与 Jakarta 版本线 |
+| `feature/3.0.x` | 21 | `3.0.x.*` | Spring 7 版本线 |
 
 ## 4. Architecture & Modules
 
@@ -214,7 +214,7 @@ MyService proxy = (MyService) java.lang.reflect.Proxy.newProxyInstance(
 | `feature/2.0.x` | 17 | `2.0.x.*` |
 | `feature/3.0.x` | 21 | `3.0.x.*` |
 
-维护策略：`1.0.x` 为当前活跃开发线（当前快照 `2.0.x.20260630-SNAPSHOT`）；`2.0.x` 与 `3.0.x` 为面向更新 JDK 的前向移植线。快照按需构建，正式 Release 通过 GitHub Releases 分发。
+维护策略：三条版本线分别适配 JDK 8、17、21；当前检出构建面向 JDK 17 的 `2.0.x.20260630-SNAPSHOT`。快照按需构建，正式 Release 通过 GitHub Releases 分发。
 
 ## 11. Contributing & License
 

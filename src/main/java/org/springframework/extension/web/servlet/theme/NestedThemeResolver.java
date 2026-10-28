@@ -3,9 +3,10 @@ package org.springframework.extension.web.servlet.theme;
 import org.springframework.web.servlet.ThemeResolver;
 import org.springframework.web.servlet.theme.AbstractThemeResolver;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * 嵌套Theme解析器；解决同时设置Theme到Session和Cookie的问题
@@ -21,7 +22,7 @@ public class NestedThemeResolver extends AbstractThemeResolver implements ThemeR
             for (ThemeResolver localeResolver : getResolvers()) {
                 // 解析theme
                 String theme = localeResolver.resolveThemeName(request);
-                if (theme == null || theme.equals(def)) {
+                if (Objects.isNull(theme) || theme.equals(def)) {
                     continue;
                 }
                 return theme;
@@ -40,10 +41,7 @@ public class NestedThemeResolver extends AbstractThemeResolver implements ThemeR
     }
 
     protected boolean isNested() {
-        if (getResolvers() != null) {
-            return true;
-        }
-        return false;
+        return Objects.nonNull(getResolvers());
     }
 
     public List<ThemeResolver> getResolvers() {

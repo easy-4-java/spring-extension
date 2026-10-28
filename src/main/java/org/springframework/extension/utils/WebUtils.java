@@ -7,12 +7,12 @@ import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 /*
  * http://blog.csdn.net/caoshuming_500/article/details/20952329
  * https://www.cnblogs.com/wang1001/p/9605761.html
- * @author [@Loong Wan](https://github.com/loong10k)
+ * @author <a href="https://github.com/loong10k">Loong Wan</a>
  */
 @Slf4j
 public class WebUtils extends org.springframework.web.util.WebUtils {

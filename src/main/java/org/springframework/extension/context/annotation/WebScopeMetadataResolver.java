@@ -22,6 +22,7 @@ import org.springframework.context.annotation.ScopeMetadataResolver;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Set;
 
 /**
@@ -36,6 +37,7 @@ public class WebScopeMetadataResolver implements ScopeMetadataResolver {
 
     public WebScopeMetadataResolver() {
         registerScope("javax.inject.Singleton", BeanDefinition.SCOPE_SINGLETON);
+        registerScope("jakarta.inject.Singleton", BeanDefinition.SCOPE_SINGLETON);
     }
 
 
@@ -80,14 +82,14 @@ public class WebScopeMetadataResolver implements ScopeMetadataResolver {
             String found = null;
             for (String annType : annTypes) {
                 Set<String> metaAnns = annDef.getMetadata().getMetaAnnotationTypes(annType);
-                if (metaAnns.contains("javax.inject.Scope")) {
-                    if (found != null) {
+                if (metaAnns.contains("javax.inject.Scope") || metaAnns.contains("jakarta.inject.Scope")) {
+                    if (Objects.nonNull(found)) {
                         throw new IllegalStateException("Found ambiguous scope annotations on bean class [" +
                                 definition.getBeanClassName() + "]: " + found + ", " + annType);
                     }
                     found = annType;
                     String scopeName = resolveScopeName(annType);
-                    if (scopeName == null) {
+                    if (Objects.isNull(scopeName)) {
                         throw new IllegalStateException(
                                 "Unsupported scope annotation - not mapped onto Spring scope name: " + annType);
                     }

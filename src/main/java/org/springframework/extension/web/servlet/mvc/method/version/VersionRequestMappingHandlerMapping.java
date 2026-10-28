@@ -65,8 +65,7 @@ public class VersionRequestMappingHandlerMapping extends RequestMappingHandlerMa
         }
 
         return new RequestMappingInfo(
-                new PatternsRequestCondition(patterns, getUrlPathHelper(), getPathMatcher(), useSuffixPatternMatch(),
-                        useTrailingSlashMatch(), getFileExtensions()),
+                new PatternsRequestCondition(patterns),
                 new RequestMethodsRequestCondition(), new ParamsRequestCondition(), new HeadersRequestCondition(),
                 new ConsumesRequestCondition(), new ProducesRequestCondition(), customCondition);
     }
